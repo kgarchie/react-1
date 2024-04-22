@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    width: 100dvw;
+    height: 100dvh;
+    background-color: hsl(0, 0%, 10%);
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: hsl(0, 0%, 20%);
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.row {
+    display: flex;
+    gap: 5px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    font-weight: 800;
+    font-size: x-large;
+    border-radius: 2px;
+    border: 0;
+}
+
+.cell.X {
+    background-color: beige;
+}
+
+.cell.O {
+    background-color: hsl(271, 58%, 82%);
+}
+
+.aside {
+    min-width: 100px;
+    display: flex;
+    background-color: hsl(240, 0%, 30%);
+    padding: 10px;
+}
